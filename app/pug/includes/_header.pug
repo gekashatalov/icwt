@@ -1,11 +1,28 @@
-.container.header
-    .row
-        .col-xs-12.col-sm-12.col-md-3.header__logo
-            a(href="#")
-                img(src="./img/icwt-logo.svg", alt="logo")
-        .col-xs-12.col-sm-12.col-md-6.header__nav
+header.header.d-flex.align-items-center  
+    .container-fluid
+        .row
+            .col-xs-12.col-sm-12.col-md-2.offset-md-1.header__logo.d-flex.align-items-center  
+                a(href="#")
+                    img(src="./img/icwt-logo.svg", alt="logo")
+            .col-xs-12.col-sm-12.col-md-6.header__nav.d-flex.align-items-center.justify-content-center
+                nav.header-navbar
+                    ul.header-navbar-ul
+                        li.header-navbar-ul__li
+                            a(href="#Advertisers").header-navbar-ul__li_a-text-style Advertisers
+                        li.header-navbar-ul__li
+                            a(href="#Platforms").header-navbar-ul__li_a-text-style Platforms
+                        li.header-navbar-ul__li
+                            a(href="#Formats").header-navbar-ul__li_a-text-style Formats
+                        li.header-navbar-ul__li
+                            a(href="#About").header-navbar-ul__li_a-text-style About
+                        li.header-navbar-ul__li
+                            a(href="#Guide").header-navbar-ul__li_a-text-style Guide
 
-        .col-xs-12.col-sm-12.col-md-3.header__btns
+            .col-xs-12.col-sm-12.col-md-3.header__btns.d-flex.align-items-center.justify-content-end
+                input(type="submit", value="Login").header-btn__login
+                input(type="submit", value="Sign Up").header-btn__sign
+
+
         
 
 

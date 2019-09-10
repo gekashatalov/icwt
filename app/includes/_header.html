@@ -1,8 +1,23 @@
 
-<div class="container header">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-3 header__logo"><a href="#"><img src="./img/icwt-logo.svg" alt="logo"/></a></div>
-    <div class="col-xs-12 col-sm-12 col-md-6 header__nav"></div>
-    <div class="col-xs-12 col-sm-12 col-md-3 header__btns"></div>
+<header class="header d-flex align-items-center"> 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-2 offset-md-1 header__logo d-flex align-items-center"> <a href="#"><img src="./img/icwt-logo.svg" alt="logo"/></a></div>
+      <div class="col-xs-12 col-sm-12 col-md-6 header__nav d-flex align-items-center justify-content-center">
+        <nav class="header-navbar">
+          <ul class="header-navbar-ul">
+            <li class="header-navbar-ul__li"><a class="header-navbar-ul__li_a-text-style" href="#Advertisers">Advertisers</a></li>
+            <li class="header-navbar-ul__li"><a class="header-navbar-ul__li_a-text-style" href="#Platforms">Platforms</a></li>
+            <li class="header-navbar-ul__li"><a class="header-navbar-ul__li_a-text-style" href="#Formats">Formats</a></li>
+            <li class="header-navbar-ul__li"><a class="header-navbar-ul__li_a-text-style" href="#About">About</a></li>
+            <li class="header-navbar-ul__li"><a class="header-navbar-ul__li_a-text-style" href="#Guide">Guide</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 header__btns d-flex align-items-center justify-content-end">
+        <input class="header-btn__login" type="submit" value="Login"/>
+        <input class="header-btn__sign" type="submit" value="Sign Up"/>
+      </div>
+    </div>
   </div>
-</div>
+</header>

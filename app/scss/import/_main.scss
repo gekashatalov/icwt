@@ -1,24 +1,211 @@
 .main {
+    
+}
+
+.first-box{
+    position: relative;
+    width: auto;
+    height: calc(100% - 80px);
+    background: transparent linear-gradient(290deg, #00B5FF 0%, #0073B9 100%) 0% 0% no-repeat padding-box;
+    z-index:10;
+}
+
+    .first-box::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: url(../img/main-bg.svg);
+        z-index: 0;
     }
 
-body{
-    height: 630px;
-    width: 1440px;
-    background: linear-gradient(151deg, #fafafa 30%, #cccccc 100%);
-}
-
-.body-background {
-    height: 630px;
-    width: 1280px;
-    background-image: url(./map-texture.svg);
-}
-
-.map{
-    height: 242px;
+.title-first{
+    margin-top: 150px;
     width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: $Raleway;
+    font-weight: bold;
+    color:#FFFFFF;
+
 }
 
-.map__iframe{
+.title-second{
+    margin-top:32px;
     width: 100%;
-    height: 100%;
+    text-align: center;
+    font-size: 42px;
+    font-family: $Raleway;
+    font-weight: bold;
+    color:#FFFFFF;
+
+}
+
+.text{
+    margin-top:16px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: $Raleway;
+    color:#FFFFFF;
+
+}
+
+.buttons{
+    display:flex;
+    justify-content: center;
+    margin-top: 46px;
+    margin-bottom: 150px;
+}
+
+.button_monetize{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 200px;
+    height: 50px;
+    background: transparent linear-gradient(90deg, #78A719 0%, #92D000 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #00000033;
+    border-radius: 8px;
+    opacity: 1;
+    color:#FFFFFF;
+    font-size: 16px;
+    font-family: $Raleway;
+    font-weight: bold;
+}
+
+.button_ADVERTIZE{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 200px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0px 4px 8px #00000033;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    opacity: 1;
+    color:#FFFFFF;
+    font-size: 16px;
+    font-family: $Raleway;
+    font-weight: bold;
+}
+
+
+.second-box__title{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-family: $Raleway;
+    font-weight: bold;
+    color:#000000;
+}
+
+.blue-stick__img-box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    background: transparent linear-gradient(180deg, #00B5FF 0%, #0073B9 100%) 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    opacity: 1;
+}
+
+.green-stick__img-box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    background: transparent linear-gradient(0deg, #78A719 0%, #92D000 100%) 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    opacity: 1;
+}
+
+
+.stick__title_style {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 20px;
+    color:#000000;
+    font-family: $Poppins;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.stick__text_style{
+    max-width: 262.5px;
+    margin-top: 24px;
+    text-align: center;
+    font-size: 14px;
+    color:#000000;
+    font-family: $Poppins;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.second-box__margin-next-row{
+    margin-top: 40px;
+}
+
+.third-box{
+    position: relative;
+    z-index: 10;
+    width: auto;
+    height: 350px;
+    background: transparent linear-gradient(285deg, #00B5FF 0%, #0073B9 100%) 0% 0% no-repeat padding-box;
+}
+    .third-box::before{
+        content: "";
+        position: absolute;
+        width: 301px;
+        height: 301px;
+        z-index: 0;
+        background: url(../img/lines.svg)
+    }
+
+    .third-box::after{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 301px;
+        height: 301px;
+        z-index: 0;
+        background: url(../img/lines.svg);
+        transform: rotate(180deg);
+
+
+    }
+
+.third-box__title{
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: $Raleway;
+    font-weight: bold;
+    color:#FFFFFF;
+}
+
+.third-box__span{
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: $Raleway;
+    color:#FFFFFF;
+}
+
+.third-box__button{
+    margin-top: 40px;
+    width: 198px;
+    height: 40px;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #ECECEC 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #00000033;
+    border-radius: 8px;
+    opacity: 1;
+    color:#0074BA;
+    font-family: $Raleway;
+    font-weight: bold;
+    font-size: 14px;
 }

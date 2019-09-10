@@ -5,6 +5,7 @@
 %nullLink {
     text-decoration: none;
     &:hover{
+        color:#7E7E7E;
         text-decoration: none;
     }
 }
@@ -49,6 +50,10 @@
 
 %absolutePos {
     position: absolute;
+}
+
+%marginUl {
+    margin-bottom: 0 ;
 }
 
 %marginCenter {
