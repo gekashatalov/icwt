@@ -4,10 +4,23 @@
 
 %nullLink {
     text-decoration: none;
-    &:hover{
+    &.header-navbar-ul__li_a-text-style:hover{
         color:#7E7E7E;
         text-decoration: none;
     }
+    &.header-btn__login:hover{
+        color:#7E7E7E;
+        text-decoration: underline;
+    }
+    &.btn_font-color_white{
+        color:#FFFFFF;
+        text-decoration: none;
+    }
+    &.btn_font-color_blue:hover{
+        color:#0074BA;
+        text-decoration: none;
+    }
+
 }
 
 %nullList {

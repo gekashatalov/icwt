@@ -1,5 +1,5 @@
 main.main
-    .first-box
+    .first-box.box-bg_blue
         .container
             .row
                 .col-md
@@ -15,8 +15,8 @@ main.main
                             p.text ICWT – a high-quality advertising network for shortly reaching commercial success.<br> Only credible ad formats supplemented by wide customization features create<br> ample opportunities for running an effective advertising campaign.
                     .row
                         .col-12.buttons
-                            input(type="submit", value="MONETIZE").button_monetize
-                            input(type="submit", value="ADVERTIZE").button_ADVERTIZE
+                            a(href="#").button_monetize.btn_font-color_white.d-flex.align-items-center.justify-content-center  MONETIZE
+                            a(href="#").button_ADVERTIZE.btn_font-color_white.d-flex.align-items-center.justify-content-center  ADVERTIZE
                 .col-md
     .second-box
         .container
@@ -86,12 +86,181 @@ main.main
             .row
                 .col-md-3
                 .col-12.col-md-6
-                    h3.third-box__title Create a free account in ICTW ADS 
-                    span.third-box__span and run the campaign in a few minutes
+                    h3.third-box__title.d-flex.align-items-center.justify-content-center Create a free account in ICTW ADS 
+                    span.third-box__span.d-flex.align-items-center.justify-content-center and run the campaign in a few minutes
                 .col-md-3
             .row
                 .col-12.d-flex.align-items-center.justify-content-center
-                    input(type="submit", value="CREATE A CAMPAIGN").third-box__button
+                    a(href="#").third-box__button.btn_font-color_blue.d-flex.align-items-center.justify-content-center  CREATE A CAMPAIGN
+    .fourth-box
+        .container
+            .row
+                .col-12
+                    h2.fourth-box__title.d-flex.align-items-center.justify-content-center They already made sure 
+                    span.fourth-box__span.d-flex.align-items-center.justify-content-center of our effectiveness        
+            .row.d-flex.flex-wrap.align-items-center.justify-content-center
+                .col-12.col-md-6.col-lg-3
+                    .fourth-box__box-label.d-flex.align-items-center.justify-content-center
+                        img(src="img/logo-viking-farms.png", alt="")
+                .col-12.col-md-6.col-lg-3
+                    .fourth-box__box-label.d-flex.align-items-center.justify-content-center
+                        img(src="img/logo-vms.png", alt="")
+                .col-12.col-md-6.col-lg-3
+                    .fourth-box__box-label.d-flex.align-items-center.justify-content-center 
+                        img(src="img/logo-bascom.png", alt="")                         
+                .col-12.col-md-6.col-lg-3
+                    .fourth-box__box-label.d-flex.align-items-center.justify-content-center
+                        img(src="img/logo-vermont-village.png", alt="")
+            .row.d-flex.flex-wrap.align-items-center.justify-content-center
+                .col-12.col-md-6.col-lg-3
+                    .fourth-box__box-label.d-flex.align-items-center.justify-content-center
+                        img(src="img/logo-whisper-hill.png", alt="")
+                .col-12.col-md-6.col-lg-3
+                    .fourth-box__box-label.d-flex.align-items-center.justify-content-center
+                        img(src="img/logo-shm.png", alt="")
+                .col-12.col-md-6.col-lg-3
+                    .fourth-box__box-label.d-flex.align-items-center.justify-content-center 
+                        img(src="img/logo-tretap.png", alt="")                         
+                .col-12.col-md-6.col-lg-3
+                    .fourth-box__box-label.d-flex.align-items-center.justify-content-center
+                        img(src="img/logo-mse.png", alt="")
+    .fifth-box.box-bg_blue
+        .container
+            .row
+                .col-12
+                    h2.fifth-box__title.d-flex.align-items-center.justify-content-center Spot Your Advertisement Format
+                    span.fifth-box__span.d-flex.align-items-center.justify-content-center Choose and combine the best Advertising Solutions for reaching a Major Impact
+            .row
+                .col-12.fifth-box__box-for-tabs
+                    //-.row
+                        .col-12.no-padding.col-md-3.d-flex.align-items-center.justify-content-center
+                            button(id="teasers").fifth-box__batton-tabs.fifth-box__batton-tabs_right-line TEASERS
+                        .col-12.no-padding.col-md-3.d-flex.align-items-center.justify-content-center
+                            button(id="context").fifth-box__batton-tabs.fifth-box__batton-tabs_right-line CONTEXT
+                        .col-12.no-padding.col-md-3.d-flex.align-items-center.justify-content-center
+                            button(id="banners").fifth-box__batton-tabs.fifth-box__batton-tabs_right-line banners
+                        .col-12.no-padding.col-md-3.d-flex.align-items-center.justify-content-center
+                            button(id="mobile").fifth-box__batton-tabs mobile
+                    ul(id="myTab").nav.nav-tabs.nav-fill.nav-overflow
+                        li.nav-item.col-12.col-sm-6.col-md-3.no-padding
+                            a(data-toggle="tab" href="#teasers").nav-link.active.fifth-box__batton-tabs.fifth-box__batton-tabs_right-line.d-flex.align-items-center.justify-content-center Teasers
+                        li.nav-item.col-12.col-sm-6.col-md-3.no-padding
+                            a(data-toggle="tab" href="#context").nav-link.fifth-box__batton-tabs.fifth-box__batton-tabs_right-line.d-flex.align-items-center.justify-content-center context
+                        li.nav-item.col-12.col-sm-6.col-md-3.no-padding
+                            a(data-toggle="tab" href="#banners").nav-link.fifth-box__batton-tabs.fifth-box__batton-tabs_right-line.d-flex.align-items-center.justify-content-center banners
+                        li.nav-item.col-12.col-sm-6.col-md-3.no-padding
+                            a(data-toggle="tab" href="#mobile").nav-link.fifth-box__batton-tabs.d-flex.align-items-center.justify-content-center mobile
+                    .tab-content
+                        div(id="teasers").tab-pane.fade.in.active
+                            .container-fluid
+                                .row
+                                    .col-12.col-md-8.col-lg-6
+                                        img(src="/img/mac.png", alt="").teasers-pisition.img_max-width
+                                    .col-12.col-md-4.col-lg-6
+                                        h3.tabs__title One of the most interest-provoking advertising method.
+                                        span.tabs__span An appealing picture with an attractive headline create a true highlight of the page, which is difficult to ignore. Wide customization options help to configure and maintain this popular ad format in accordance with advertiser needs and user expectations.
+                                        br
+                                        a(href="#").tabs__button.btn_font-color_white.d-flex.align-items-center.justify-content-center Create a campaign
 
+                        div(id="context").tab-pane
+                            .row
+                                .col-12.col-md-8.col-lg-6.d-flex.align-items-center.justify-content-center
+                                    img(src="/img/context.png", alt="").img_max-width
+                                .col-12.col-md-4.col-lg-6
+                                    h3.tabs__title Textual ads - easy and fruitful format for commercial goals
+                                    span.tabs__span Texts are suitable advertising tool for any-purpose promotion campaign. Thanks to adaptive design and wide customization options, this kind of ads naturally fits into main content of the page and softly induce visitors to follow them.
+                                    br
+                                    a(href="#").tabs__button.btn_font-color_white.d-flex.align-items-center.justify-content-center Create a campaign
+                        div(id="banners").tab-pane
+                            .row
+                                .col-12.col-md-8.col-lg-6.d-flex.align-items-center.justify-content-center
+                                    img(src="/img/banners.png", alt="").img_max-width
+                                .col-12.col-md-4.col-lg-6
+                                    h3.tabs__title An ultimate eye-catching advertising format to draw viewers’ attention
+                                    span.tabs__span Banners are an effective image-based promotional tool to notify users of the product. Accompanied by useful customization features, high-quality placement, and animating possibility, these influential ads leave the little possibility to remain unnoticed.
+                                    br
+                                    a(href="#").tabs__button.btn_font-color_white.d-flex.align-items-center.justify-content-center Create a campaign
+                        div(id="mobile").tab-pane
+                            .row
+                                .col-12.col-md-8.col-lg-6.d-flex.align-items-center.justify-content-center
+                                    img(src="/img/mobile.png", alt="").img_max-width
+                                .col-12.col-md-4.col-lg-6
+                                    h3.tabs__title The up-to-day shortest way to reach your target audience
+                                    span.tabs__span Due to the growth of mobile Internet users, mobile ad types became one of the most productive means for goods promotion. This flexible and easily managed ad format helps to access a larger number of viewers and increase the engagement rate.
+                                    br
+                                    a(href="#").tabs__button.btn_font-color_white.d-flex.align-items-center.justify-content-center Create a campaign
+    .sixth-box
+        .container
+            .row
+                .col-12.col-md-6
+                    .container-fluid
+                        .row
+                            .col-12
+                                h3.sixth-box__title The first-rate means for reaching the target market
+                        .row.padding_bottom
+                            .col-2
+                                img(src="img/icon-left-001.svg", alt="")                            
+                            .col-10
+                                h4.sixth-box__h4 5 minutes to setup a campaign 
+                                span.sixth-box__span Quick and easy ads customization
+                        .row.padding_bottom
+                            .col-2
+                                img(src="img/icon-left-002.svg", alt="")                            
+                            .col-10
+                                h4.sixth-box__h4 Manual sites selection  
+                                span.sixth-box__span Choosing solely relevant ad platforms
+                        .row.padding_bottom
+                            .col-2
+                                img(src="img/icon-left-003.svg", alt="")                            
+                            .col-10
+                                h4.sixth-box__h4 Real-time statistic  
+                                span.sixth-box__span Only up-to-date ad campaign data
+                        .row.padding_bottom
+                            .col-2
+                                img(src="img/icon-left-004.svg", alt="")                            
+                            .col-10
+                                h4.sixth-box__h4 100% real users 
+                                span.sixth-box__span Protection from any bot or suspicious activity
+                        .row.padding_bottom
+                            .col-2
+                                img(src="img/icon-left-005.svg", alt="")                            
+                            .col-10
+                                h4.sixth-box__h4 Helpful support team 
+                                span.sixth-box__span Timely assistance from qualified consultants
+                .col-12.col-md-6
+                    .container-fluid
+                        .row
+                            .col-12
+                                h3.sixth-box__title For publishers who want to monetize the site
+                        .row.padding_bottom
+                            .col-2
+                                img(src="img/icon-right-001.svg", alt="")                            
+                            .col-10
+                                h4.sixth-box__h4 Easy to operate 
+                                span.sixth-box__span Just paste the ad code to the site
+                        .row.padding_bottom
+                            .col-2
+                                img(src="img/icon-right-002.svg", alt="")                            
+                            .col-10
+                                h4.sixth-box__h4 Clear statistics  
+                                span.sixth-box__span Detailed views and clicks reports
+                        .row.padding_bottom
+                            .col-2
+                                img(src="img/icon-right-003.svg", alt="")                            
+                            .col-10
+                                h4.sixth-box__h4 Full safety  
+                                span.sixth-box__span Checked and approved advert messages 
+                        .row.padding_bottom
+                            .col-2
+                                img(src="img/icon-right-004.svg", alt="")                            
+                            .col-10
+                                h4.sixth-box__h4 Quick payments 
+                                span.sixth-box__span Fast and safe generation of income
+                        .row.padding_bottom
+                            .col-2
+                                img(src="img/icon-right-005.svg", alt="")                            
+                            .col-10
+                                h4.sixth-box__h4 Various ad settings 
+                                span.sixth-box__span Easy ads adaption to the site design
 
-    
+                
