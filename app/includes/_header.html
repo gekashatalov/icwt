@@ -1,20 +1,31 @@
 
 <header class="header d-flex align-items-center"> 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-2 offset-md-1 header__logo d-flex align-items-center"> <a href="#"><img src="./img/icwt-logo.svg" alt="logo"/></a></div>
-      <div class="col-xs-12 col-sm-12 col-md-6 header__nav d-flex align-items-center justify-content-center">
-        <nav class="header-navbar">
-          <ul class="header-navbar-ul">
-            <li class="header-navbar-ul__li"><a class="header-navbar-ul__li_a-text-style" href="#Advertisers">Advertisers</a></li>
-            <li class="header-navbar-ul__li"><a class="header-navbar-ul__li_a-text-style" href="#Platforms">Platforms</a></li>
-            <li class="header-navbar-ul__li"><a class="header-navbar-ul__li_a-text-style" href="#Formats">Formats</a></li>
-            <li class="header-navbar-ul__li"><a class="header-navbar-ul__li_a-text-style" href="#About">About</a></li>
-            <li class="header-navbar-ul__li"><a class="header-navbar-ul__li_a-text-style" href="#Guide">Guide</a></li>
-          </ul>
-        </nav>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top container-fluid">
+    <div class="container-fluid">
+      <div class="row w-100 no-gutters">
+        <div class="col-12 col-sm-6 col-lg-3 order-first justify-content-center">
+          <div class="container firstBlockHeader">
+            <div class="row"> 
+              <div class="col-3 col-sm-3 col-md-4 col-lg-2 col-xl-2 btn-menu">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+              </div>
+              <div class="col-9 col-sm-9 col-md-8 col-lg-10 col-xl-10 logo"><a class="navbar-brand" href="#"><img src="./img/icwt-logo.svg" alt=""/></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 justify-content-center navbar_position">
+          <div class="collapse navbar-collapse header-navbar justify-content-center" id="navbarResponsive">
+            <ul class="navbar-nav header-navbar-ul">
+              <li class="nav-item"><a class="nav-link header-navbar-ul__li_a-text-style" href="#Advertisers">Advertisers</a></li>
+              <li class="nav-item"><a class="nav-link header-navbar-ul__li_a-text-style" href="#Platforms">Platforms</a></li>
+              <li class="nav-item"><a class="nav-link header-navbar-ul__li_a-text-style" href="#Formats">Formats</a></li>
+              <li class="nav-item"><a class="nav-link header-navbar-ul__li_a-text-style" href="#About">About</a></li>
+              <li class="nav-item"><a class="nav-link header-navbar-ul__li_a-text-style" href="#Guide">Guide</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 header__btns d-flex justify-content-end"><a class="header-btn__login button__login_hover-and-active d-flex align-items-center justify-content-center" href="#"> Login</a><a class="header-btn__sign button_hover-and-active d-flex btn_font-color_white align-items-center justify-content-center" href="#"> Sign Up</a></div>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-3 header__btns d-flex align-items-center justify-content-end"><a class="header-btn__login d-flex align-items-center justify-content-center" href="#"> Login</a><a class="header-btn__sign d-flex btn_font-color_white align-items-center justify-content-center" href="#"> Sign Up</a></div>
     </div>
-  </div>
+  </nav>
 </header>

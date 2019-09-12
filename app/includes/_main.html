@@ -21,7 +21,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12 buttons"><a class="button_monetize btn_font-color_white d-flex align-items-center justify-content-center" href="#"> MONETIZE</a><a class="button_ADVERTIZE btn_font-color_white d-flex align-items-center justify-content-center" href="#"> ADVERTIZE</a></div>
+            <div class="col-12 buttons"><a class="button_monetize btn_font-color_white button_hover-and-active d-flex align-items-center justify-content-center" href="#"> MONETIZE</a><a class="button_ADVERTIZE btn_font-color_white button_hover-and-active d-flex align-items-center justify-content-center" href="#"> ADVERTIZE</a></div>
           </div>
         </div>
         <div class="col-md"></div>
@@ -113,7 +113,7 @@
       </div>
     </div>
   </div>
-  <div class="third-box">
+  <div class="third-box blur-box-with-lines">
     <div class="container">
       <div class="row">
         <div class="col-md-3"></div>
@@ -123,7 +123,7 @@
         <div class="col-md-3"></div>
       </div>
       <div class="row">
-        <div class="col-12 d-flex align-items-center justify-content-center"><a class="third-box__button btn_font-color_blue d-flex align-items-center justify-content-center" href="#"> CREATE A CAMPAIGN</a></div>
+        <div class="col-12 d-flex align-items-center justify-content-center"><a class="third-box__button btn_font-color_blue button_hover-and-active d-flex align-items-center justify-content-center" href="#"> CREATE A CAMPAIGN</a></div>
       </div>
     </div>
   </div>
@@ -173,44 +173,44 @@
       </div>
       <div class="row">
         <div class="col-12 fifth-box__box-for-tabs">
-          <ul class="nav nav-tabs nav-fill nav-overflow" id="myTab">
-            <li class="nav-item col-12 col-sm-6 col-md-3 no-padding"><a class="nav-link active fifth-box__batton-tabs fifth-box__batton-tabs_right-line d-flex align-items-center justify-content-center" data-toggle="tab" href="#teasers">Teasers</a></li>
-            <li class="nav-item col-12 col-sm-6 col-md-3 no-padding"><a class="nav-link fifth-box__batton-tabs fifth-box__batton-tabs_right-line d-flex align-items-center justify-content-center" data-toggle="tab" href="#context">context</a></li>
-            <li class="nav-item col-12 col-sm-6 col-md-3 no-padding"><a class="nav-link fifth-box__batton-tabs fifth-box__batton-tabs_right-line d-flex align-items-center justify-content-center" data-toggle="tab" href="#banners">banners</a></li>
-            <li class="nav-item col-12 col-sm-6 col-md-3 no-padding"><a class="nav-link fifth-box__batton-tabs d-flex align-items-center justify-content-center" data-toggle="tab" href="#mobile">mobile</a></li>
+          <ul class="nav nav-tabs nav-fill nav-overflow" id="myTab" role="tablist">
+            <li class="nav-item col-12 col-sm-6 col-md-3 no-padding"><a class="nav-link active fifth-box__batton-tabs fifth-box__batton-tabs_right-line d-flex align-items-center justify-content-center" id="teasers-tab" role="tab" aria-controls="teasers" aria-selected="true" data-toggle="tab" href="#teasers">Teasers</a></li>
+            <li class="nav-item col-12 col-sm-6 col-md-3 no-padding"><a class="nav-link fifth-box__batton-tabs fifth-box__batton-tabs_right-line d-flex align-items-center justify-content-center" id="context-tab" role="tab" aria-controls="context" aria-selected="false" data-toggle="tab" href="#context">context</a></li>
+            <li class="nav-item col-12 col-sm-6 col-md-3 no-padding"><a class="nav-link fifth-box__batton-tabs fifth-box__batton-tabs_right-line d-flex align-items-center justify-content-center" id="banners-tab" role="tab" aria-controls="banners" aria-selected="false" data-toggle="tab" href="#banners">banners</a></li>
+            <li class="nav-item col-12 col-sm-6 col-md-3 no-padding"><a class="nav-link fifth-box__batton-tabs d-flex align-items-center justify-content-center" id="mobile-tab" role="tab" aria-controls="mobile" aria-selected="false" data-toggle="tab" href="#mobile">mobile</a></li>
           </ul>
-          <div class="tab-content">
-            <div class="tab-pane fade in active" id="teasers">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="teasers" role="tabpanel" aria-labelledby="teasers-tab">
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-12 col-md-8 col-lg-6"><img class="teasers-pisition img_max-width" src="/img/mac.png" alt=""/></div>
                   <div class="col-12 col-md-4 col-lg-6">
-                    <h3 class="tabs__title">One of the most interest-provoking advertising method.</h3><span class="tabs__span">An appealing picture with an attractive headline create a true highlight of the page, which is difficult to ignore. Wide customization options help to configure and maintain this popular ad format in accordance with advertiser needs and user expectations.</span><br/><a class="tabs__button btn_font-color_white d-flex align-items-center justify-content-center" href="#">Create a campaign</a>
+                    <h3 class="tabs__title">One of the most interest-provoking advertising method.</h3><span class="tabs__span">An appealing picture with an attractive headline create a true highlight of the page, which is difficult to ignore. Wide customization options help to configure and maintain this popular ad format in accordance with advertiser needs and user expectations.</span><br/><a class="tabs__button btn_font-color_white button_hover-and-active d-flex align-items-center justify-content-center" href="#">Create a campaign</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="context">
+            <div class="tab-pane fade" id="context" role="tabpanel" aria-labelledby="context-tab">
               <div class="row">
                 <div class="col-12 col-md-8 col-lg-6 d-flex align-items-center justify-content-center"><img class="img_max-width" src="/img/context.png" alt=""/></div>
                 <div class="col-12 col-md-4 col-lg-6">
-                  <h3 class="tabs__title">Textual ads - easy and fruitful format for commercial goals</h3><span class="tabs__span">Texts are suitable advertising tool for any-purpose promotion campaign. Thanks to adaptive design and wide customization options, this kind of ads naturally fits into main content of the page and softly induce visitors to follow them.</span><br/><a class="tabs__button btn_font-color_white d-flex align-items-center justify-content-center" href="#">Create a campaign</a>
+                  <h3 class="tabs__title">Textual ads - easy and fruitful format for commercial goals</h3><span class="tabs__span">Texts are suitable advertising tool for any-purpose promotion campaign. Thanks to adaptive design and wide customization options, this kind of ads naturally fits into main content of the page and softly induce visitors to follow them.</span><br/><a class="tabs__button btn_font-color_white button_hover-and-active d-flex align-items-center justify-content-center" href="#">Create a campaign</a>
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="banners">
+            <div class="tab-pane fade" id="banners" role="tabpanel" aria-labelledby="banners-tab">
               <div class="row">
                 <div class="col-12 col-md-8 col-lg-6 d-flex align-items-center justify-content-center"><img class="img_max-width" src="/img/banners.png" alt=""/></div>
                 <div class="col-12 col-md-4 col-lg-6">
-                  <h3 class="tabs__title">An ultimate eye-catching advertising format to draw viewers’ attention</h3><span class="tabs__span">Banners are an effective image-based promotional tool to notify users of the product. Accompanied by useful customization features, high-quality placement, and animating possibility, these influential ads leave the little possibility to remain unnoticed.</span><br/><a class="tabs__button btn_font-color_white d-flex align-items-center justify-content-center" href="#">Create a campaign</a>
+                  <h3 class="tabs__title">An ultimate eye-catching advertising format to draw viewers’ attention</h3><span class="tabs__span">Banners are an effective image-based promotional tool to notify users of the product. Accompanied by useful customization features, high-quality placement, and animating possibility, these influential ads leave the little possibility to remain unnoticed.</span><br/><a class="tabs__button btn_font-color_white button_hover-and-active d-flex align-items-center justify-content-center" href="#">Create a campaign</a>
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="mobile">
+            <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
               <div class="row">
                 <div class="col-12 col-md-8 col-lg-6 d-flex align-items-center justify-content-center"><img class="img_max-width" src="/img/mobile.png" alt=""/></div>
                 <div class="col-12 col-md-4 col-lg-6">
-                  <h3 class="tabs__title">The up-to-day shortest way to reach your target audience</h3><span class="tabs__span">Due to the growth of mobile Internet users, mobile ad types became one of the most productive means for goods promotion. This flexible and easily managed ad format helps to access a larger number of viewers and increase the engagement rate.</span><br/><a class="tabs__button btn_font-color_white d-flex align-items-center justify-content-center" href="#">Create a campaign</a>
+                  <h3 class="tabs__title">The up-to-day shortest way to reach your target audience</h3><span class="tabs__span">Due to the growth of mobile Internet users, mobile ad types became one of the most productive means for goods promotion. This flexible and easily managed ad format helps to access a larger number of viewers and increase the engagement rate.</span><br/><a class="tabs__button btn_font-color_white button_hover-and-active d-flex align-items-center justify-content-center" href="#">Create a campaign</a>
                 </div>
               </div>
             </div>
@@ -230,32 +230,32 @@
               </div>
             </div>
             <div class="row padding_bottom">
-              <div class="col-2"><img src="img/icon-left-001.svg" alt=""/></div>
-              <div class="col-10">
+              <div class="col-3 col-md-3 col-lg-2"><img src="img/icon-left-001.svg" alt=""/></div>
+              <div class="col-9 col-md-9 col-lg-10">
                 <h4 class="sixth-box__h4">5 minutes to setup a campaign </h4><span class="sixth-box__span">Quick and easy ads customization</span>
               </div>
             </div>
             <div class="row padding_bottom">
-              <div class="col-2"><img src="img/icon-left-002.svg" alt=""/></div>
-              <div class="col-10">
+              <div class="col-3 col-md-3 col-lg-2"><img src="img/icon-left-002.svg" alt=""/></div>
+              <div class="col-9 col-md-9 col-lg-10">
                 <h4 class="sixth-box__h4">Manual sites selection  </h4><span class="sixth-box__span">Choosing solely relevant ad platforms</span>
               </div>
             </div>
             <div class="row padding_bottom">
-              <div class="col-2"><img src="img/icon-left-003.svg" alt=""/></div>
-              <div class="col-10">
+              <div class="col-3 col-md-3 col-lg-2"><img src="img/icon-left-003.svg" alt=""/></div>
+              <div class="col-9 col-md-9 col-lg-10">
                 <h4 class="sixth-box__h4">Real-time statistic  </h4><span class="sixth-box__span">Only up-to-date ad campaign data</span>
               </div>
             </div>
             <div class="row padding_bottom">
-              <div class="col-2"><img src="img/icon-left-004.svg" alt=""/></div>
-              <div class="col-10">
+              <div class="col-3 col-md-3 col-lg-2"><img src="img/icon-left-004.svg" alt=""/></div>
+              <div class="col-9 col-md-9 col-lg-10">
                 <h4 class="sixth-box__h4">100% real users </h4><span class="sixth-box__span">Protection from any bot or suspicious activity</span>
               </div>
             </div>
             <div class="row padding_bottom">
-              <div class="col-2"><img src="img/icon-left-005.svg" alt=""/></div>
-              <div class="col-10">
+              <div class="col-3 col-md-3 col-lg-2"><img src="img/icon-left-005.svg" alt=""/></div>
+              <div class="col-9 col-md-9 col-lg-10">
                 <h4 class="sixth-box__h4">Helpful support team </h4><span class="sixth-box__span">Timely assistance from qualified consultants</span>
               </div>
             </div>
@@ -269,33 +269,84 @@
               </div>
             </div>
             <div class="row padding_bottom">
-              <div class="col-2"><img src="img/icon-right-001.svg" alt=""/></div>
-              <div class="col-10">
+              <div class="col-3 col-md-3 col-lg-2"><img src="img/icon-right-001.svg" alt=""/></div>
+              <div class="col-9 col-md-9 col-lg-10">
                 <h4 class="sixth-box__h4">Easy to operate </h4><span class="sixth-box__span">Just paste the ad code to the site</span>
               </div>
             </div>
             <div class="row padding_bottom">
-              <div class="col-2"><img src="img/icon-right-002.svg" alt=""/></div>
-              <div class="col-10">
+              <div class="col-3 col-md-3 col-lg-2"><img src="img/icon-right-002.svg" alt=""/></div>
+              <div class="col-9 col-md-9 col-lg-10">
                 <h4 class="sixth-box__h4">Clear statistics  </h4><span class="sixth-box__span">Detailed views and clicks reports</span>
               </div>
             </div>
             <div class="row padding_bottom">
-              <div class="col-2"><img src="img/icon-right-003.svg" alt=""/></div>
-              <div class="col-10">
+              <div class="col-3 col-md-3 col-lg-2"><img src="img/icon-right-003.svg" alt=""/></div>
+              <div class="col-9 col-md-9 col-lg-10">
                 <h4 class="sixth-box__h4">Full safety  </h4><span class="sixth-box__span">Checked and approved advert messages </span>
               </div>
             </div>
             <div class="row padding_bottom">
-              <div class="col-2"><img src="img/icon-right-004.svg" alt=""/></div>
-              <div class="col-10">
+              <div class="col-3 col-md-3 col-lg-2"><img src="img/icon-right-004.svg" alt=""/></div>
+              <div class="col-9 col-md-9 col-lg-10">
                 <h4 class="sixth-box__h4">Quick payments </h4><span class="sixth-box__span">Fast and safe generation of income</span>
               </div>
             </div>
             <div class="row padding_bottom">
-              <div class="col-2"><img src="img/icon-right-005.svg" alt=""/></div>
-              <div class="col-10">
+              <div class="col-3 col-md-3 col-lg-2"><img src="img/icon-right-005.svg" alt=""/></div>
+              <div class="col-9 col-md-9 col-lg-10">
                 <h4 class="sixth-box__h4">Various ad settings </h4><span class="sixth-box__span">Easy ads adaption to the site design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="seventh-box blur-box-with-lines">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="seventh-box__title">Sign up today</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10 offset-1 col-md-6 offset-md-3 sevent-box__box-for-tabs">
+          <ul class="nav nav-tabs nav-fill nav-overflow" id="myTab" role="tablist">
+            <li class="nav-item col-12 col-sm-6 no-padding"><a class="nav-link active fifth-box__batton-tabs d-flex align-items-center justify-content-center" id="advertiser-tab" role="tab" aria-controls="advertiser" aria-selected="true" data-toggle="tab" href="#advertiser">i'm an advertiser</a></li>
+            <li class="nav-item col-12 col-sm-6 no-padding"><a class="nav-link fifth-box__batton-tabs d-flex align-items-center justify-content-center" id="webmaster-tab" role="tab" aria-controls="webmaster" aria-selected="false" data-toggle="tab" href="#webmaster">i'm an webmaster</a></li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="advertiser" role="tabpanel" aria-labelledby="advertiser-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <form class="form" action="#">
+                      <label class="form__label" for="email">Ready for new customers?</label>
+                      <input class="form__input" type="email" name="Your Email" placeholder="Your Email"/>
+                      <input class="form__input" type="text" name="Company name" placeholder="Company name"/>
+                      <input class="form__input" type="text" name="name" placeholder="Name"/>
+                      <input class="form__input" type="password" name="password" placeholder="Password"/>
+                      <input class="form__button button_hover-and-active" type="submit" value="Sign Up"/><span class="form_span">We will help you to set up and launch an advertising campaign free of charge if you encounter difficulties in.</span>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="webmaster" role="tabpanel" aria-labelledby="webmaster-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <form class="form" action="#">
+                      <label class="form__label" for="email">Want to earn more?</label>
+                      <input class="form__input" type="email" name="Your Email" placeholder="Your Email"/>
+                      <input class="form__input" type="text" name="Your site URL" placeholder="Your site URL"/>
+                      <input class="form__input" type="text" name="name" placeholder="Name"/>
+                      <input class="form__input" type="password" name="password" placeholder="Password"/>
+                      <input class="form__button button_hover-and-active" type="submit" value="Sign Up"/><span class="form_span">We will help you to place ad blocks on your website for free if you have difficulties.</span>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

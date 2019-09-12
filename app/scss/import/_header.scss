@@ -1,20 +1,22 @@
 .header{
     min-height: 80px;
-    height: auto;
+    width: 100%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 5px 5px #0000001A;
     opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 
 }
 
-.header__nav{
-   
-    
-    
-}
+
 
 .header-navbar{
-    
+    display: inline-block;
+    padding-left: auto;
+    padding-right: auto;
     
 }
 
@@ -38,6 +40,14 @@
     font-size: 16px;
 
     
+}
+
+.header-navbar-ul__li_a-text-style:hover{
+    color:#0073B9 !important;
+}
+
+.header-navbar-ul__li_a-text-style:focus{
+    color:#00B5FF !important;
 }
 
 .header-btn__login{

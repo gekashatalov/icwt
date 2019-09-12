@@ -150,23 +150,27 @@
 }
 
 .third-box{
+    height: 100%;
+    min-height: 350px;
+}
+
+.blur-box-with-lines{
     position: relative;
     z-index: 10;
     width: auto;
-    height: 100%;
-    min-height: 350px;
     background: transparent linear-gradient(285deg, #00B5FF 0%, #0073B9 100%) 0% 0% no-repeat padding-box;
 }
-    .third-box::before{
+    .blur-box-with-lines::after{
         content: "";
         position: absolute;
+        top:0;
         width: 304px;
         height: 301px;
         z-index: 0;
         background: url(../img/lines.svg)
     }
 
-    .third-box::after{
+    .blur-box-with-lines::before{
         content: "";
         position: absolute;
         bottom: 0px;
@@ -216,6 +220,8 @@
     min-height: 550px;
 }
 
+
+
 .fourth-box__title{
     margin-top: 100px;
     text-align: center;
@@ -244,6 +250,7 @@
 .fifth-box{
     min-height: 800px;
 }
+
 .fifth-box__title{
     margin-top: 100px;
     margin-bottom: 24px;
@@ -263,7 +270,7 @@
 }
 
 .fifth-box__box-for-tabs{
-    min-height: 440px;
+    min-height: 464px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 8px;
     opacity: 1;
@@ -288,8 +295,11 @@
     font-weight: bold;
     color: #B2B2B2 ;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    //border-left: #000000 2px solid;
-    //opacity: 1;
+    
+}
+
+.fifth-box__batton-tabs.active{
+    transform: scaleX(1.1);
 }
 
 .nav-overflow{
@@ -316,15 +326,15 @@
         z-index: 10;
         display: inline-block;
         height: 40px;
-        border-right: 2px #B2B2B2  solid;
+        border-right: 2px #e8e8e8  solid;
         top: 10px;
         right: 0px;
 }
-/*.fifth-box__batton-tabs_right-line.active{
+.fifth-box__batton-tabs_right-line.active{
     &::after{
-        content: "";
+        content: none;
     }
-}*/
+}
 
 
 .tabs__title{
@@ -370,6 +380,10 @@
     bottom: -50px;
 }
 
+.sixth-box{
+    margin-bottom: 70px;
+}
+
 .sixth-box__title{
     margin-bottom:40px;
     margin-top: 100px;
@@ -402,4 +416,135 @@
 
 .padding_bottom{
     padding-bottom:30px;
+}
+
+.seventh-box{
+    height: 100%;
+    min-height: 740px;
+}
+
+.seventh-box__title{
+    margin-bottom:40px;
+    margin-top: 100px;
+    text-align:center;
+    font-size: 30px;
+    font-family: $Raleway;
+    font-weight: bold;
+    color:#FFFFFF;
+    line-height: 35px;
+}
+
+.sevent-box__box-for-tabs{
+    min-height: 465px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #0000001A;
+    border-radius: 8px;
+    opacity: 1;
+    margin-bottom:100px;
+}
+
+
+
+.form{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form__label{
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing:1.4px;
+    font-family: $Raleway;
+    color:#0074BA;
+    letter-spacing: 0.8px;
+    width: 100%;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.form__input{
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    font-size: 16px;
+    font-family: $Poppins;
+    width: 100%;
+    color:#000000 !important;
+    opacity: 1;
+    color: initial;
+    margin-bottom: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: #E8E8E8 2px solid;
+
+}
+
+.form__input::placeholder{
+    color: #000000;
+    font-weight: 300;
+    
+}
+
+
+.form__button{
+    display:flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 222px;
+    height: 50px;
+    background: transparent linear-gradient(90deg, #78A719 0%, #92D000 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #00000033;
+    border-radius: 8px;
+    opacity: 1;
+    color:#FFFFFF;
+    font-family: $Raleway;
+    font-weight: bold;
+}
+
+
+.form_span{
+    display: inline-block;
+    text-align: center;
+    font-size:14px;
+    font-family: $Poppins;
+    font-weight: 300;
+    line-height: 21px;
+    color: #B2B2B2;
+    margin-bottom: 40px;
+}
+.button_hover-and-active{
+    transition: .4s;
+}
+.button_hover-and-active:hover{
+    transform: translateY(-1px);
+    box-shadow: 0px 6px 20px #00000033;
+}
+
+.button_hover-and-active:active{
+    transform: translateY(0px);
+}
+
+.button__login_hover-and-active{
+    transition: .4s;
+}
+
+.button__login_hover-and-active:hover{
+    transform: translateY(-1px);
+}
+
+.button__login_hover-and-active:active{
+    transform: translateY(0px);
 }
