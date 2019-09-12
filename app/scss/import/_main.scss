@@ -5,7 +5,7 @@
 .box-bg_blue{
     position: relative;
     width: auto;
-    height: calc(100% - 80px);
+    height: 100vh;
     background: transparent linear-gradient(290deg, #00B5FF 0%, #0073B9 100%) 0% 0% no-repeat padding-box;
     z-index:10;
 }
@@ -150,6 +150,7 @@
 }
 
 .third-box{
+    margin-top:100px;
     height: 100%;
     min-height: 350px;
 }
@@ -249,6 +250,7 @@
 }
 .fifth-box{
     min-height: 800px;
+    height: initial !important;
 }
 
 .fifth-box__title{
