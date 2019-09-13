@@ -80,6 +80,54 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: bold; }
 
+.menuBar {
+  position: fixed;
+  top: 22px;
+  left: 14px;
+  display: block;
+  width: 28px;
+  height: 24px;
+  z-index: 990;
+  border-color: #FFFFFF !important; }
+  .menuBar:hover {
+    opacity: .7; }
+  .menuBar__item {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 28px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #0074BA;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s; }
+    .menuBar__item-1 {
+      top: 0; }
+    .menuBar__item-2 {
+      top: 50%; }
+    .menuBar__item-3 {
+      top: 100%; }
+  .menuBar_active .menuBar__item-1 {
+    -ms-transform: translateY(12px) translateX(0) rotate(45deg);
+        transform: translateY(12px) translateX(0) rotate(45deg);
+    -webkit-transform: translateY(12px) translateX(0) rotate(45deg);
+    -moz-transform: translateY(12px) translateX(0) rotate(45deg); }
+  .menuBar_active .menuBar__item-2 {
+    opacity: 0; }
+  .menuBar_active .menuBar__item-3 {
+    -ms-transform: translateY(-12px) translateX(0) rotate(-45deg);
+        transform: translateY(-12px) translateX(0) rotate(-45deg);
+    -webkit-transform: translateY(-10.2px) translateX(0) rotate(-45deg);
+    -moz-transform: translateY(-12px) translateX(0) rotate(-45deg); }
+
+.navbar_position-collapse {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.button_display-menu {
+  padding-top: 60px; }
+
 .box-bg_blue {
   position: relative;
   width: auto;
@@ -633,7 +681,7 @@ body {
 .header-navbar-ul {
   margin-bottom: 0; }
 
-.button {
+.button, .menuBar {
   -webkit-transition: .5s;
   transition: .5s; }
 
@@ -642,9 +690,10 @@ body {
 
 @media only screen and (max-width: 992px) {
   .navbar_position {
+    text-align: center;
     position: absolute !important;
     padding-left: 20px;
-    top: 69px;
+    top: 68px;
     left: 0px;
     width: 100%;
     border-top: 1px solid #cdcdcd;
@@ -652,11 +701,17 @@ body {
     -webkit-box-shadow: 0px 5px 5px #0000001A;
             box-shadow: 0px 5px 5px #0000001A; } }
 
+@media only screen and (min-width: 992px) {
+  .navbar_position-collapse {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important; } }
+
 @media only screen and (max-width: 768px) {
   .navbar_position {
+    text-align: center;
     padding-left: 20px !important;
     position: absolute;
-    top: 69px;
+    top: 68px;
     left: 0px;
     width: 100%;
     border-top: 1px solid #cdcdcd;
@@ -697,9 +752,10 @@ body {
 
 @media only screen and (max-width: 575px) {
   .navbar_position {
+    text-align: center;
     position: absolute !important;
     padding-left: 20px;
-    top: 98px;
+    top: 68px;
     left: 0px;
     width: 100%;
     border-top: 1px solid #cdcdcd;
@@ -709,4 +765,21 @@ body {
   .third-box.blur-box-with-lines::after {
     content: none; }
   .third-box.blur-box-with-lines::before {
-    content: none; } }
+    content: none; }
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .button_display {
+    display: none !important; } }
+
+@media only screen and (min-width: 575px) {
+  .button_display-menu {
+    display: none; } }
+
+@media only screen and (max-width: 480px) {
+  .navbar_position-collapse {
+    height: 100vh; } }
+
+@media only screen and (max-width: 375px) {
+  .box-bg_blue {
+    height: initial; } }

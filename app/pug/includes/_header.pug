@@ -5,14 +5,17 @@ header.header.d-flex.align-items-center
                     div.col-12.col-sm-6.col-lg-3.order-first.justify-content-center
                         div.container.firstBlockHeader
                             div.row 
-                                div.col-3.col-sm-3.col-md-4.col-lg-2.col-xl-2.btn-menu
-                                    button(type="button" data-toggle="collapse" data-target="#navbarResponsive").navbar-toggler
-                                        span.navbar-toggler-icon
-                                div.col-9.col-sm-9.col-md-8.col-lg-10.col-xl-10.logo
+                                div.col-2.btn-menu
+                                    <a class="menuBar navbar-toggler" href="#" id="menuBar" data-toggle="collapse" data-target="#navbarResponsive">
+                                        <span class="menuBar__item menuBar__item-1"></span>
+                                        <span class="menuBar__item menuBar__item-2"></span>
+                                        <span class="menuBar__item menuBar__item-3"></span>
+                                    </a>
+                                div.col-10.logo
                                     a(href="#").navbar-brand
                                         img(src="./img/icwt-logo.svg" alt="")
                     div.col-lg-6.justify-content-center.navbar_position
-                        div(id="navbarResponsive").collapse.navbar-collapse.header-navbar.justify-content-center
+                        div(id="navbarResponsive").collapse.navbar-collapse.header-navbar.justify-content-center.navbar_position-collapse
                             ul.navbar-nav.header-navbar-ul
                                 li.nav-item
                                     a(href="#Advertisers").nav-link.header-navbar-ul__li_a-text-style Advertisers
@@ -24,9 +27,12 @@ header.header.d-flex.align-items-center
                                     a(href="#About").nav-link.header-navbar-ul__li_a-text-style About
                                 li.nav-item
                                     a(href="#Guide").nav-link.header-navbar-ul__li_a-text-style Guide
+                                li.nav-item.button_display-menu
+                                    a(href="#").header-btn__login.button__login_hover-and-active.d-flex.align-items-center.justify-content-center  Login
+                                    a(href="#").header-btn__sign.button_hover-and-active.d-flex.btn_font-color_white.align-items-center.justify-content-center  Sign Up
                     div.col-12.col-sm-6.col-lg-3.header__btns.d-flex.justify-content-end
-                        a(href="#").header-btn__login.button__login_hover-and-active.d-flex.align-items-center.justify-content-center  Login
-                        a(href="#").header-btn__sign.button_hover-and-active.d-flex.btn_font-color_white.align-items-center.justify-content-center  Sign Up
+                        a(href="#").button_display.header-btn__login.button__login_hover-and-active.d-flex.align-items-center.justify-content-center  Login
+                        a(href="#").button_display.header-btn__sign.button_hover-and-active.d-flex.btn_font-color_white.align-items-center.justify-content-center  Sign Up
                 
                     
 

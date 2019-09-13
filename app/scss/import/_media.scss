@@ -18,9 +18,10 @@
 
 @media only screen and (max-width:992px) {
     .navbar_position{
+        text-align: center;
         position: absolute !important;
         padding-left: 20px;
-        top:69px;
+        top:68px;
         left:0px;
         width: 100%;
         border-top:1px solid #cdcdcd;
@@ -31,11 +32,19 @@
     
 }
 
+@media only screen and (min-width:992px) {
+    .navbar_position-collapse{
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
 @media only screen and (max-width:768px) {
     .navbar_position{
+        text-align: center;
         padding-left: 20px !important;
         position: absolute;
-        top:69px;
+        top:68px;
         left:0px;
         width: 100%;
         border-top:1px solid #cdcdcd;
@@ -72,24 +81,56 @@
 
 @media only screen and (max-width:575px) {
     .navbar_position{
+        text-align: center;
         position: absolute !important;
         padding-left: 20px;
-        top:98px;
+        top:68px;
         left:0px;
         width: 100%;
         border-top:1px solid #cdcdcd;
         background-color: #FFFFFF;
         box-shadow: 0px 5px 5px #0000001A;
     }
+    
+
     .third-box.blur-box-with-lines::after{
         content: none;
     }
     .third-box.blur-box-with-lines::before{
         content: none;
     }
+    .footer{
+        padding-left: 15px;
+        padding-right: 15px;   
+    }
+    .button_display{
+        display: none !important;
+    }
+    
+}
+@media only screen and (min-width:575px) {
+    .button_display-menu{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .navbar_position-collapse{
+        height: 100vh;
+        
+    }
+
+
+}
+
+
+@media only screen and (max-width:375px) {
+    .box-bg_blue{
+        height: initial;
+    }
+    
     
 }
 
-@media only screen and (max-width:375px) {
-}
+
 

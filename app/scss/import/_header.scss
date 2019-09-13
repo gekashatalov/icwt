@@ -76,3 +76,66 @@
     font-weight: bold;
 }
 
+
+
+.menuBar {
+    @extend %baseTransition;
+    position: fixed;
+    top: 22px;
+    left: 14px;
+    display: block;
+    width:$width-line;
+    height:$height-icon;
+    z-index: 990;
+    border-color: #FFFFFF !important;
+    &:hover {
+        opacity: .7;
+    }
+    &__item {
+        position:absolute;
+        left:0;
+        display: block;
+        width:$width-line;
+        height:$height-line;
+        border-radius: 1px;
+        background-color: $barsColor;
+        transition: all $transition-time;
+        -webkit-transition: all $transition-time;
+        -moz-transition: all $transition-time;
+        &-1{
+            top:0;
+        }
+        &-2{
+            top:50%;
+        }
+        &-3{
+            top:100%;
+        }
+    }
+    &_active{
+        .menuBar__item-1{
+            transform: translateY($translateY) translateX($translateX) rotate($rotation);
+            -webkit-transform: translateY($translateY) translateX($translateX) rotate($rotation);
+            -moz-transform: translateY($translateY) translateX($translateX) rotate($rotation);
+        }
+        .menuBar__item-2{
+            opacity:0;
+        }
+        .menuBar__item-3{
+            transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+            -webkit-transform: translateY($translateY * -0.85) translateX($translateX) rotate($rotation * -1);
+            -moz-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+        }
+    }
+}
+
+.navbar_position-collapse{
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+.button_display-menu{
+    padding-top: 60px;
+}
+
+

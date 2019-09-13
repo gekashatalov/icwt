@@ -1,10 +1,19 @@
 $(document).ready(function() {
 
-});
+  var topMenu = $('.menuBar'),
+      viewport = Math.max(document.documentElement.clientWidth, window.innerWidth);
 
-/*$(function(){ 
-    $("#myTab a").click(function(e){
-      e.preventDefault();
-      $(this).tab('show');
-    });
-  });*/
+
+  topMenu.click(function(){
+      $('.menuBar').toggleClass('menuBar_active');
+      if(viewport < 480) {
+        if(topMenu.hasClass('menuBar_active')){
+            $('html, body').css({'overflow-y':'hidden'});
+        }else{
+            $('html, body').css({'overflow-y':'initial'});
+        }
+
+     
+      }
+  });
+});
