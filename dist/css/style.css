@@ -644,14 +644,12 @@ body {
 .button__login_hover-and-active:hover {
   position: relative;
   left: 0px;
-  top: -1px;
-  color: #0073B9 !important; }
+  top: -1px; }
 
 .button__login_hover-and-active:active {
   position: relative;
   left: 0px;
-  top: 0px;
-  color: #0074BA !important; }
+  top: 0px; }
 
 .footer {
   padding-left: 55px;
